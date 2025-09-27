@@ -1,8 +1,8 @@
 # Simple Sparse Set ECS
 Simple header-only implementation of a sparse set ECS model.
 
-[!WARNING]
-This is a test project made for fun, it is NOT production-ready whatsoever.
+>[!WARNING]
+>This is a test project made for fun, it is NOT production-ready whatsoever.
 
 This project includes the following features:
 - An ECS world.
