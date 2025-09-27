@@ -195,6 +195,10 @@ class World
     public:
         World(const World&) = delete;
         World(World&&) = delete;
+        ~World()
+        {
+            for (auto& pair : sparseSetMap) delete pair.second;
+        }
 
         World& operator=(const World&) = delete;
         World& operator=(World&&) = delete;
