@@ -29,6 +29,11 @@ class Entity
         {
             return id;
         }
+
+        std::size_t GetGen() const
+        {
+            return gen;
+        }
 };
 
 struct ISparseSet
@@ -238,7 +243,7 @@ class World
         {
             std::size_t id{entity.GetID()};
 
-            return (id < generations.size()) && (entity.gen == generations[id]);
+            return (id < generations.size()) && (entity.GetGen() == generations[id]);
         }
 
         template <typename C>
